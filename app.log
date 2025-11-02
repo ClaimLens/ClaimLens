@@ -1,0 +1,16 @@
+2025-11-02 21:10:12,460 [INFO] root: ✅ Connected to MongoDB successfully!
+2025-11-02 21:10:12,691 [INFO] services.ai_service: ✅ Gemini AI Service initialized
+2025-11-02 21:12:23,465 [INFO] root: ✅ Connected to MongoDB successfully!
+2025-11-02 21:12:23,749 [INFO] services.ai_service: ✅ Gemini AI Service initialized
+2025-11-02 21:12:23,757 [INFO] __main__: 🚀 Starting Insurance Claim API on port 5000
+2025-11-02 21:12:23,768 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+2025-11-02 21:12:23,768 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-11-02 21:12:23,769 [INFO] werkzeug:  * Restarting with stat
+2025-11-02 21:12:24,511 [INFO] root: ✅ Connected to MongoDB successfully!
+2025-11-02 21:12:24,776 [INFO] services.ai_service: ✅ Gemini AI Service initialized
+2025-11-02 21:12:24,780 [INFO] __main__: 🚀 Starting Insurance Claim API on port 5000
+2025-11-02 21:12:24,787 [WARNING] werkzeug:  * Debugger is active!
+2025-11-02 21:12:24,787 [INFO] werkzeug:  * Debugger PIN: 270-792-148
