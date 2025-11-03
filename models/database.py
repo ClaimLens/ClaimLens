@@ -82,6 +82,21 @@ class Database:
         claims = list(self.claims.find(query).sort("created_at", -1))
         return [serialize_doc(c) for c in claims]
 
+    def get_claims_by_risk_level(self, risk_levels):
+        """Get claims by risk level or status"""
+        if not isinstance(risk_levels, list):
+            risk_levels = [risk_levels]
+        
+        # Check both status and risk level
+        query = {
+            "$or": [
+                {"status": {"$in": risk_levels}},
+                {"ai_analysis.xgboost_risk_level": {"$in": risk_levels}}
+            ]
+        }
+        claims = list(self.claims.find(query).sort("created_at", -1))
+        return [serialize_doc(c) for c in claims]
+
     def update_claim(self, claim_id, update_data):
         update_data["updated_at"] = datetime.utcnow()
         result = self.claims.update_one(
