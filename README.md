@@ -21,7 +21,36 @@ AI-powered insurance claim management system with automated document processing 
 
 ## 📦 Installation
 
-### 1. Clone & Setup
+### Option 1: Quick Setup with Miniconda (Recommended for Windows)
+
+**Prerequisites:**
+1. Download and install Miniconda from https://docs.conda.io/en/latest/miniconda.html
+2. After installation, open PowerShell and run: `conda init powershell`
+3. Restart PowerShell
+
+**Automated Setup:**
+```powershell
+# Run the automated setup script
+.\setup_env.ps1
+```
+
+**Manual Setup:**
+```powershell
+# Create environment from environment.yml
+conda env create -f environment.yml
+
+# Activate environment
+conda activate claimlens
+
+# Or create manually:
+conda create -n claimlens python=3.11 -y
+conda activate claimlens
+pip install --upgrade pip setuptools wheel
+conda install -c conda-forge grpcio protobuf pillow pydantic-core -y
+pip install -r requirements.txt
+```
+
+### Option 2: Traditional Virtual Environment Setup
 ```bash
 git clone <your-repo>
 cd insurance-backend
@@ -44,6 +73,8 @@ MONGODB_URI=your_mongodb_connection_string
 GEMINI_API_KEY=your_gemini_api_key
 JWT_SECRET=your-secret-key-min-32-chars
 ```
+
+**Note:** If using conda, make sure the environment is activated (`conda activate claimlens`) before running any commands.
 
 ### 3. Get API Keys
 
@@ -153,6 +184,19 @@ backend/
 ```
 
 ## 🚨 Common Issues
+
+**Issue: `conda` command not found in PowerShell**
+- Run: `conda init powershell` (after installing Miniconda)
+- Restart PowerShell
+- Or use "Anaconda Prompt" instead
+
+**Issue: pip install fails with compilation errors (grpcio, protobuf)**
+- Solution: Install from conda-forge first
+  ```powershell
+  conda activate claimlens
+  conda install -c conda-forge grpcio protobuf pillow pydantic-core -y
+  pip install -r requirements.txt
+  ```
 
 **Issue: MongoDB connection fails**
 - Check connection string format

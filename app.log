@@ -14,3 +14,247 @@
 2025-11-02 21:12:24,780 [INFO] __main__: 🚀 Starting Insurance Claim API on port 5000
 2025-11-02 21:12:24,787 [WARNING] werkzeug:  * Debugger is active!
 2025-11-02 21:12:24,787 [INFO] werkzeug:  * Debugger PIN: 270-792-148
+2025-11-03 13:25:11,934 [ERROR] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 69085fdacaf131238a7abe7b, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-11-03 13:26:56,388 [ERROR] root: MongoDB connection failed: The "dnspython" module must be installed to use mongodb+srv:// URIs. To fix this error install pymongo with the srv extra:
+ C:\Users\nithi\AppData\Local\Programs\Python\Python310\python.exe -m pip install "pymongo[srv]"
+2025-11-03 13:27:53,966 [ERROR] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997),SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997),SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997), Timeout: 10.0s, Topology Description: <TopologyDescription id: 690860779f7e35c371b9c74a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>]>
+2025-11-03 13:28:48,049 [ERROR] root: MongoDB connection failed: Unknown option ssl_cert_reqs
+2025-11-03 13:29:20,932 [ERROR] root: MongoDB connection failed: Unknown option: ssl_cert_reqs. Did you mean one of (sockettimeoutms, heartbeatfrequencyms, localthresholdms) or maybe a camelCase version of one? Refer to docstring.
+2025-11-03 13:30:08,648 [ERROR] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997),SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997),SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997), Timeout: 10.0s, Topology Description: <TopologyDescription id: 690860fe960f286ffc8134a9, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:997)')>]>
+2025-11-03 13:30:29,100 [ERROR] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 10.0s, Topology Description: <TopologyDescription id: 690861126d7ade7801f7a006, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-11-03 13:31:42,539 [ERROR] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 10.0s, Topology Description: <TopologyDescription id: 6908615b1c3a15eed9143d7f, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-11-03 13:33:11,365 [WARNING] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 690861bad07f39684aca5fdb, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-11-03 13:33:11,367 [INFO] root: Running in MOCK MODE - using in-memory data
+2025-11-03 13:33:12,851 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.100.23.141:5000
+2025-11-03 13:33:12,852 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-11-03 13:33:12,859 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 13:33:18,984 [WARNING] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 690861c168b485558010d10a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-11-03 13:33:18,985 [INFO] root: Running in MOCK MODE - using in-memory data
+2025-11-03 13:33:20,635 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 13:33:20,647 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 13:35:59,076 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\models\\database.py', reloading
+2025-11-03 13:35:59,743 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 13:36:05,902 [WARNING] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6908626884addcfa54629f04, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-11-03 13:36:05,903 [INFO] root: Running in MOCK MODE - using in-memory data
+2025-11-03 13:36:07,280 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 13:36:07,289 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 13:36:16,403 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\models\\database.py', reloading
+2025-11-03 13:36:17,100 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 13:36:23,415 [WARNING] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 690862796e05664a7c76db04, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-11-03 13:36:23,416 [INFO] root: Running in MOCK MODE - using in-memory data
+2025-11-03 13:36:24,719 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 13:36:24,729 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 13:36:29,803 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\models\\database.py', reloading
+2025-11-03 13:36:30,191 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 13:36:36,447 [WARNING] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 6908628790fb140ba128bf23, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-11-03 13:36:36,448 [INFO] root: Running in MOCK MODE - using in-memory data
+2025-11-03 13:36:36,731 [INFO] root: Mock data initialized with admin and customer accounts
+2025-11-03 13:36:38,055 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 13:36:38,062 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 13:36:40,103 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\models\\database.py', reloading
+2025-11-03 13:36:40,731 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 14:50:26,530 [WARNING] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 690873d577bf035514ebca19, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-11-03 14:50:26,532 [INFO] root: Running in MOCK MODE - using in-memory data
+2025-11-03 14:50:26,811 [INFO] root: Mock data initialized with admin and customer accounts
+2025-11-03 14:50:29,127 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.100.23.141:5000
+2025-11-03 14:50:29,128 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-11-03 14:50:29,133 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 14:50:35,391 [WARNING] root: MongoDB connection failed: SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 5.0s, Topology Description: <TopologyDescription id: 690873de718a6d32707fd349, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-qaow8cl-shard-00-00.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-00.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-01.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-01.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-qaow8cl-shard-00-02.98dbchj.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-qaow8cl-shard-00-02.98dbchj.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1016) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-11-03 14:50:35,391 [INFO] root: Running in MOCK MODE - using in-memory data
+2025-11-03 14:50:35,706 [INFO] root: Mock data initialized with admin and customer accounts
+2025-11-03 14:50:37,071 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 14:50:37,081 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 14:57:45,579 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 14:57:47,386 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.100.23.141:5000
+2025-11-03 14:57:47,386 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-11-03 14:57:47,391 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 14:57:49,115 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 14:57:50,546 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 14:57:50,553 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:04:27,109 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:04:27] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-11-03 15:04:36,318 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:04:36] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-11-03 15:08:17,533 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:08:19,376 [INFO] werkzeug: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.100.23.141:5000
+2025-11-03 15:08:19,376 [INFO] werkzeug: [33mPress CTRL+C to quit[0m
+2025-11-03 15:08:19,379 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 15:08:21,116 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:08:22,403 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 15:08:22,409 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:09:30,944 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:09:30] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-11-03 15:10:00,181 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:10:00] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-11-03 15:10:05,846 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:10:05] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-11-03 15:10:05,992 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:10:05] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-11-03 15:10:06,140 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:10:06] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-11-03 15:10:06,354 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:10:06] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-11-03 15:10:50,570 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:10:50] "[31m[1mPOST /api/auth/register HTTP/1.1[0m" 400 -
+2025-11-03 15:11:51,765 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\routes\\auth.py', reloading
+2025-11-03 15:11:52,522 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 15:11:54,390 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:11:55,988 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 15:11:55,995 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:12:01,063 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\routes\\auth.py', reloading
+2025-11-03 15:12:01,578 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 15:12:03,124 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:12:04,366 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 15:12:04,374 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:12:07,429 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\models\\user.py', reloading
+2025-11-03 15:12:08,094 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 15:12:09,635 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:12:10,870 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 15:12:10,878 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:12:25,039 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\models\\user.py', reloading
+2025-11-03 15:12:25,704 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 15:12:27,120 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:12:28,591 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 15:12:28,600 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:12:50,816 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\routes\\auth.py', reloading
+2025-11-03 15:12:51,458 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 15:12:52,850 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:12:54,294 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 15:12:54,309 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:14:02,492 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:14:02] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 500 -
+2025-11-03 15:14:44,940 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\models\\database.py', reloading
+2025-11-03 15:14:45,475 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 15:14:49,257 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:14:50,474 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 15:14:50,479 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:14:58,593 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\models\\database.py', reloading
+2025-11-03 15:14:59,299 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 15:15:00,933 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:15:02,213 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 15:15:02,218 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:15:10,315 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\models\\database.py', reloading
+2025-11-03 15:15:11,081 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 15:15:12,649 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:15:13,873 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 15:15:13,880 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:15:43,842 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:15:43] "[35m[1mPOST /api/auth/register HTTP/1.1[0m" 201 -
+2025-11-03 15:15:44,118 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:15:44] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:15:44,123 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:15:44] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:15:44,137 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:15:44] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:15:44,144 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:15:44] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:18:20,292 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:18:20] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:18:20,293 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:18:20] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:18:20,306 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:18:20] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:18:20,309 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:18:20] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:18:46,403 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:18:46] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:18:46,409 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:18:46] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:18:46,433 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:18:46] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:18:46,436 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:18:46] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:23:58,961 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:23:58] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:23:58,981 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:23:58] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:24:04,368 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:04] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:24:04,370 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:04] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:24:04,390 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:04] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:24:04,400 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:04] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:24:12,583 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:12] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:24:12,594 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:12] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:24:21,397 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:21] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:24:21,400 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:21] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:24:21,422 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:21] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:24:21,428 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:21] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:24:43,183 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:43] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:24:43,196 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:24:43] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:26:46,345 [INFO] routes.claims: Processing document with AI: uploads\CLM372162_20251103_095646_Fake_Medical_Test_Report.pdf
+2025-11-03 15:26:46,811 [ERROR] services.ai_service: Gemini API error (attempt 1): cannot identify image file 'uploads\\CLM372162_20251103_095646_Fake_Medical_Test_Report.pdf'
+2025-11-03 15:26:46,811 [INFO] services.ai_service: Retrying in 1 seconds...
+2025-11-03 15:26:47,815 [ERROR] services.ai_service: Gemini API error (attempt 2): cannot identify image file 'uploads\\CLM372162_20251103_095646_Fake_Medical_Test_Report.pdf'
+2025-11-03 15:26:47,818 [INFO] services.ai_service: Retrying in 2 seconds...
+2025-11-03 15:26:49,823 [ERROR] services.ai_service: Gemini API error (attempt 3): cannot identify image file 'uploads\\CLM372162_20251103_095646_Fake_Medical_Test_Report.pdf'
+2025-11-03 15:26:49,824 [ERROR] services.ai_service: All Gemini retries failed, using fallback
+2025-11-03 15:26:49,825 [WARNING] routes.claims: AI extraction failed: cannot identify image file 'uploads\\CLM372162_20251103_095646_Fake_Medical_Test_Report.pdf'
+2025-11-03 15:26:49,872 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:26:49] "[35m[1mPOST /api/claims/create HTTP/1.1[0m" 201 -
+2025-11-03 15:26:49,923 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:26:49] "[33mGET /api/claims/undefined HTTP/1.1[0m" 404 -
+2025-11-03 15:26:49,938 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:26:49] "[33mGET /api/claims/undefined HTTP/1.1[0m" 404 -
+2025-11-03 15:26:59,770 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:26:59] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:26:59,781 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:26:59] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:27:04,966 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:04] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:27:04,972 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:04] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:27:04,993 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:04] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:27:04,994 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:04] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:27:10,799 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:10] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:27:10,809 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:10] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:27:11,760 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:11] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:27:11,765 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:11] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:27:11,786 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:11] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:27:11,789 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:11] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:27:26,048 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:26] "POST /api/auth/login HTTP/1.1" 200 -
+2025-11-03 15:27:26,088 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:26] "[33mGET /api/admin/dashboard HTTP/1.1[0m" 404 -
+2025-11-03 15:27:26,108 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:26] "[33mGET /api/admin/dashboard HTTP/1.1[0m" 404 -
+2025-11-03 15:27:34,699 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:34] "GET /api/admin/claims HTTP/1.1" 200 -
+2025-11-03 15:27:34,768 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:34] "GET /api/admin/claims HTTP/1.1" 200 -
+2025-11-03 15:27:42,612 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:42] "GET /api/auth/verify HTTP/1.1" 200 -
+2025-11-03 15:27:42,641 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:42] "GET /api/auth/verify HTTP/1.1" 200 -
+2025-11-03 15:27:50,777 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:50] "POST /api/auth/login HTTP/1.1" 200 -
+2025-11-03 15:27:50,819 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:50] "[33mGET /api/admin/dashboard HTTP/1.1[0m" 404 -
+2025-11-03 15:27:50,842 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:50] "[33mGET /api/admin/dashboard HTTP/1.1[0m" 404 -
+2025-11-03 15:27:58,532 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:58] "GET /api/admin/analytics HTTP/1.1" 200 -
+2025-11-03 15:27:58,687 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:27:58] "GET /api/admin/analytics HTTP/1.1" 200 -
+2025-11-03 15:28:00,886 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:28:00] "[33mGET /api/admin/dashboard HTTP/1.1[0m" 404 -
+2025-11-03 15:28:00,897 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:28:00] "[33mGET /api/admin/dashboard HTTP/1.1[0m" 404 -
+2025-11-03 15:28:15,966 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:28:15] "GET /api/admin/analytics HTTP/1.1" 200 -
+2025-11-03 15:28:16,116 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:28:16] "GET /api/admin/analytics HTTP/1.1" 200 -
+2025-11-03 15:28:26,088 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:28:26] "[33mGET /api/admin/dashboard HTTP/1.1[0m" 404 -
+2025-11-03 15:28:26,106 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:28:26] "[33mGET /api/admin/dashboard HTTP/1.1[0m" 404 -
+2025-11-03 15:29:09,187 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:29:09] "POST /api/auth/login HTTP/1.1" 200 -
+2025-11-03 15:29:09,255 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:29:09] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:29:09,263 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:29:09] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:29:09,288 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:29:09] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:29:09,289 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:29:09] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:29:15,265 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:29:15] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:29:15,280 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:29:15] "[33mGET /api/claims/user HTTP/1.1[0m" 404 -
+2025-11-03 15:29:26,870 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:29:26] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:29:26,874 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:29:26] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:29:26,912 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:29:26] "[33mGET /api/claims/statistics HTTP/1.1[0m" 404 -
+2025-11-03 15:29:26,930 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:29:26] "[33mGET /api/claims/user?limit=5 HTTP/1.1[0m" 404 -
+2025-11-03 15:30:18,510 [INFO] routes.claims: Processing document with AI: uploads\CLM089261_20251103_100018_Fake_Medical_Test_Report.pdf
+2025-11-03 15:30:18,515 [ERROR] services.ai_service: Gemini API error (attempt 1): cannot identify image file 'uploads\\CLM089261_20251103_100018_Fake_Medical_Test_Report.pdf'
+2025-11-03 15:30:18,516 [INFO] services.ai_service: Retrying in 1 seconds...
+2025-11-03 15:30:19,517 [ERROR] services.ai_service: Gemini API error (attempt 2): cannot identify image file 'uploads\\CLM089261_20251103_100018_Fake_Medical_Test_Report.pdf'
+2025-11-03 15:30:19,519 [INFO] services.ai_service: Retrying in 2 seconds...
+2025-11-03 15:30:21,524 [ERROR] services.ai_service: Gemini API error (attempt 3): cannot identify image file 'uploads\\CLM089261_20251103_100018_Fake_Medical_Test_Report.pdf'
+2025-11-03 15:30:21,524 [ERROR] services.ai_service: All Gemini retries failed, using fallback
+2025-11-03 15:30:21,525 [WARNING] routes.claims: AI extraction failed: cannot identify image file 'uploads\\CLM089261_20251103_100018_Fake_Medical_Test_Report.pdf'
+2025-11-03 15:30:21,559 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:30:21] "[35m[1mPOST /api/claims/create HTTP/1.1[0m" 201 -
+2025-11-03 15:30:21,606 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:30:21] "[33mGET /api/claims/undefined HTTP/1.1[0m" 404 -
+2025-11-03 15:30:21,616 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:30:21] "[33mGET /api/claims/undefined HTTP/1.1[0m" 404 -
+2025-11-03 15:33:46,686 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\routes\\claims.py', reloading
+2025-11-03 15:33:47,227 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 15:33:49,789 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:33:51,859 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 15:33:51,868 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:34:18,239 [INFO] werkzeug:  * Detected change in 'C:\\Users\\nithi\\Desktop\\ClaimLens\\routes\\claims.py', reloading
+2025-11-03 15:34:19,017 [INFO] werkzeug:  * Restarting with stat
+2025-11-03 15:34:20,617 [INFO] root: Connected to MongoDB successfully!
+2025-11-03 15:34:22,066 [WARNING] werkzeug:  * Debugger is active!
+2025-11-03 15:34:22,075 [INFO] werkzeug:  * Debugger PIN: 337-502-914
+2025-11-03 15:35:09,571 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:35:09] "GET /api/claims/user HTTP/1.1" 200 -
+2025-11-03 15:35:09,708 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:35:09] "GET /api/claims/user HTTP/1.1" 200 -
+2025-11-03 15:36:22,161 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:36:22] "GET /api/claims/CLM089261 HTTP/1.1" 200 -
+2025-11-03 15:36:22,208 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:36:22] "GET /api/claims/CLM089261 HTTP/1.1" 200 -
+2025-11-03 15:40:14,632 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:14] "GET /api/auth/verify HTTP/1.1" 200 -
+2025-11-03 15:40:14,662 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:14] "GET /api/auth/verify HTTP/1.1" 200 -
+2025-11-03 15:40:21,396 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:21] "GET /api/claims/user HTTP/1.1" 200 -
+2025-11-03 15:40:21,457 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:21] "GET /api/claims/user HTTP/1.1" 200 -
+2025-11-03 15:40:32,528 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:32] "GET /api/claims/CLM089261 HTTP/1.1" 200 -
+2025-11-03 15:40:32,574 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:32] "GET /api/claims/CLM089261 HTTP/1.1" 200 -
+2025-11-03 15:40:35,868 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:35] "GET /api/auth/verify HTTP/1.1" 200 -
+2025-11-03 15:40:35,900 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:35] "GET /api/auth/verify HTTP/1.1" 200 -
+2025-11-03 15:40:35,963 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:35] "GET /api/claims/user HTTP/1.1" 200 -
+2025-11-03 15:40:36,015 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:36] "GET /api/claims/user HTTP/1.1" 200 -
+2025-11-03 15:40:56,254 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:56] "GET /api/auth/verify HTTP/1.1" 200 -
+2025-11-03 15:40:56,301 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:56] "GET /api/auth/verify HTTP/1.1" 200 -
+2025-11-03 15:40:56,390 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:56] "GET /api/claims/user HTTP/1.1" 200 -
+2025-11-03 15:40:56,459 [INFO] werkzeug: 127.0.0.1 - - [03/Nov/2025 15:40:56] "GET /api/claims/user HTTP/1.1" 200 -

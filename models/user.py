@@ -3,13 +3,14 @@ from datetime import datetime
 
 class User:
     @staticmethod
-    def create(email, password, name, role='customer'):
+    def create(email, password, name, phone='', role='customer'):
         return {
             'email': email,
             'password': generate_password_hash(password),
-            'name': name,
+            'full_name': name,  # Store as full_name for consistency
+            'name': name,       # Keep name for backward compatibility
             'role': role,  # 'customer' or 'admin'
-            'phone': '',
+            'phone': phone or '',
             'created_at': datetime.utcnow(),
             'is_active': True
         }

@@ -153,3 +153,39 @@ def create_claim(current_user):
     except Exception as e:
         logger.error(f"Error creating claim: {str(e)}")
         return jsonify({'error': 'Failed to create claim', 'details': str(e)}), 500
+
+
+@claims_bp.route('/user', methods=['GET'])
+@token_required
+def get_user_claims(current_user):
+    """Get all claims for current user"""
+    try:
+        user_id = str(current_user['_id'])
+        claims = db.get_claims_by_user(user_id)
+        
+        return jsonify([Claim.to_dict(claim) for claim in claims]), 200
+        
+    except Exception as e:
+        logger.error(f"Error fetching user claims: {str(e)}")
+        return jsonify({'error': 'Failed to fetch claims'}), 500
+
+
+@claims_bp.route('/<claim_id>', methods=['GET'])
+@token_required
+def get_claim_details(current_user, claim_id):
+    """Get specific claim details"""
+    try:
+        claim = db.get_claim_by_id(claim_id)
+        
+        if not claim:
+            return jsonify({'error': 'Claim not found'}), 404
+        
+        # Check if user owns this claim or is admin
+        if str(claim.get('user_id')) != str(current_user['_id']) and current_user.get('role') != 'admin':
+            return jsonify({'error': 'Unauthorized'}), 403
+        
+        return jsonify(Claim.to_dict(claim)), 200
+        
+    except Exception as e:
+        logger.error(f"Error fetching claim details: {str(e)}")
+        return jsonify({'error': 'Failed to fetch claim details'}), 500

@@ -84,28 +84,53 @@ def register():
     try:
         data = request.json
         
-        # Validate input
-        required_fields = ['email', 'password', 'name']
-        if not all(field in data for field in required_fields):
-            return jsonify({'error': 'Missing required fields'}), 400
+        # Validate input - accept both 'name' and 'full_name'
+        name = data.get('name') or data.get('full_name')
+        email = data.get('email')
+        password = data.get('password')
+        phone = data.get('phone')
+        
+        if not all([email, password, name]):
+            return jsonify({'error': 'Missing required fields: email, password, and name are required'}), 400
         
         # Check if user exists
-        if db.get_user_by_email(data['email']):
+        if db.get_user_by_email(email):
             return jsonify({'error': 'Email already registered'}), 400
         
         # Create user
         user_data = User.create(
-            email=data['email'],
-            password=data['password'],
-            name=data['name'],
+            email=email,
+            password=password,
+            name=name,
+            phone=phone,
             role=data.get('role', 'customer')
         )
         
         user_id = db.create_user(user_data)
         
+        # Get the created user
+        user = db.get_user_by_email(email)
+        
+        # Generate JWT token for automatic login
+        jwt_secret = os.getenv('JWT_SECRET')
+        if not jwt_secret:
+            logger.error("JWT_SECRET not configured!")
+            return jsonify({'error': 'Server configuration error'}), 500
+        
+        token = jwt.encode({
+            'email': user['email'],
+            'user_id': str(user['_id']),
+            'role': user['role'],
+            'exp': datetime.utcnow() + timedelta(days=7)
+        }, jwt_secret, algorithm='HS256')
+        
+        # Return user info with token
+        user_info = User.to_dict(user)
+        
         return jsonify({
             'message': 'User registered successfully',
-            'user_id': user_id
+            'token': token,
+            'user': user_info
         }), 201
         
     except Exception as e:

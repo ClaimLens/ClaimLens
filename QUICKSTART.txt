@@ -1,0 +1,108 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                  ClaimLens - Quick Start Card                    ║
+║                    Miniconda Setup for Windows                   ║
+╚══════════════════════════════════════════════════════════════════╝
+
+📥 FIRST TIME SETUP
+═══════════════════════════════════════════════════════════════════
+
+1. Install Miniconda (one-time only):
+   → Download: https://docs.conda.io/en/latest/miniconda.html
+   → Run installer (Miniconda3-latest-Windows-x86_64.exe)
+   → After install, open PowerShell as Admin and run:
+     
+     cd $env:USERPROFILE\Miniconda3\Scripts
+     .\conda.exe init powershell
+     
+   → Restart PowerShell
+
+2. Run automated setup:
+   
+   cd C:\Users\nithi\Desktop\ClaimLens
+   .\setup_env.ps1
+
+   ✅ This creates the environment and installs everything!
+
+───────────────────────────────────────────────────────────────────
+
+🚀 DAILY USAGE
+═══════════════════════════════════════════════════════════════════
+
+Open PowerShell → Navigate to project → Run:
+
+  conda activate claimlens
+  python app.py
+
+Server runs at: http://localhost:5000
+
+───────────────────────────────────────────────────────────────────
+
+🧪 TESTING
+═══════════════════════════════════════════════════════════════════
+
+  conda activate claimlens
+  python test_api.py
+
+───────────────────────────────────────────────────────────────────
+
+🛠️ COMMON COMMANDS
+═══════════════════════════════════════════════════════════════════
+
+Activate environment:      conda activate claimlens
+Deactivate:               conda deactivate
+List environments:        conda env list
+Check Python version:     python --version
+Install new package:      pip install <package-name>
+Update package:           pip install --upgrade <package-name>
+
+───────────────────────────────────────────────────────────────────
+
+❌ TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════
+
+Problem: "conda: command not found"
+Fix:     Run: conda init powershell (then restart PowerShell)
+
+Problem: Script execution disabled
+Fix:     Run as Admin: Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+Problem: Import errors
+Fix:     conda install -c conda-forge grpcio protobuf -y
+
+Problem: Need to start fresh
+Fix:     conda env remove -n claimlens
+         Then run .\setup_env.ps1 again
+
+───────────────────────────────────────────────────────────────────
+
+📚 FILES CREATED
+═══════════════════════════════════════════════════════════════════
+
+✓ environment.yml      - Conda environment specification
+✓ setup_env.ps1       - Automated setup script
+✓ SETUP_GUIDE.md      - Detailed setup documentation
+✓ QUICKSTART.txt      - This file (quick reference)
+✓ README.md           - Updated with Miniconda instructions
+
+───────────────────────────────────────────────────────────────────
+
+🎯 VERIFICATION TEST
+═══════════════════════════════════════════════════════════════════
+
+After setup, test everything works:
+
+  conda activate claimlens
+  python -c "import flask, pymongo, pydantic; print('✓ OK')"
+
+If you see "✓ OK", you're ready to code! 🎉
+
+───────────────────────────────────────────────────────────────────
+
+📞 NEED MORE HELP?
+═══════════════════════════════════════════════════════════════════
+
+→ Read SETUP_GUIDE.md for detailed instructions
+→ Check README.md "Common Issues" section
+→ Conda docs: https://docs.conda.io/
+
+═══════════════════════════════════════════════════════════════════
